@@ -1,0 +1,1 @@
+export * from './name-and-percent.interface';
