@@ -1,5 +1,5 @@
-import { INatureMutipliers } from "../../../domain/pokemon/nature/nature.interface";
-import { NatureMultipliers } from "./nature-multipliers";
+import { INatureMutipliers } from '../../../domain/pokemon/nature/nature.interface';
+import { NatureMultipliers } from './nature-multipliers';
 
 describe('NatureMultipliers', () => {
   it('should create a valid NatureMultipliers object', () => {

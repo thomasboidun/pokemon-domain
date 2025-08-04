@@ -1,6 +1,6 @@
-import { ValueObject } from "../../../core/value-object";
-import { IIndividualValues } from "../../../domain/pokemon/individual-values/individual-values.interface";
-import { IndividualValue } from "./individual-value";
+import { ValueObject } from '../../../core/value-object';
+import { IIndividualValues } from '../../../domain/pokemon/individual-values/individual-values.interface';
+import { IndividualValue } from './individual-value';
 
 /**
  * Properties required to create an IndividualValues value object.

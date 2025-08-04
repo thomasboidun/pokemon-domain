@@ -1,9 +1,9 @@
-import { NATURES, NATURE_NAMES, NATURE_SUMMARIES } from "../../domain/pokemon/nature/nature.data";
-import { INature } from "../../domain/pokemon/nature/nature.interface";
-import { NatureNameValue } from "../../domain/pokemon/nature/nature.type";
-import { NatureMultipliers } from "../../value-objects/pokemon/nature/nature-multipliers";
-import { NatureName } from "../../value-objects/pokemon/nature/nature-name";
-import { NatureSummary } from "../../value-objects/pokemon/nature/nature-summary";
+import { NATURES, NATURE_NAMES, NATURE_SUMMARIES } from '../../domain/pokemon/nature/nature.data';
+import { INature } from '../../domain/pokemon/nature/nature.interface';
+import { NatureNameValue } from '../../domain/pokemon/nature/nature.type';
+import { NatureMultipliers } from '../../value-objects/pokemon/nature/nature-multipliers';
+import { NatureName } from '../../value-objects/pokemon/nature/nature-name';
+import { NatureSummary } from '../../value-objects/pokemon/nature/nature-summary';
 
 /**
  * Props used internally by Nature entity.
@@ -33,7 +33,7 @@ export class Nature {
     return this._all;
   }
 
-  private constructor(private readonly props: NatureProps) { }
+  private constructor(private readonly props: NatureProps) {}
 
   /** The Nature's name (identity) */
   public get name(): NatureName {

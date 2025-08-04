@@ -32,16 +32,12 @@ describe('EffortValues', () => {
 
   it('should correctly sum EV values statically', () => {
     const sum = EffortValues.getSum(validEvs);
-    expect(sum).toBe(
-      validEvs.hp + validEvs.atk + validEvs.def + validEvs.spa + validEvs.spd + validEvs.spe
-    );
+    expect(sum).toBe(validEvs.hp + validEvs.atk + validEvs.def + validEvs.spa + validEvs.spd + validEvs.spe);
   });
 
   it('should correctly sum EV values via instance method', () => {
     const evs = EffortValues.create(validEvs);
-    expect(evs.sum()).toBe(
-      validEvs.hp + validEvs.atk + validEvs.def + validEvs.spa + validEvs.spd + validEvs.spe
-    );
+    expect(evs.sum()).toBe(validEvs.hp + validEvs.atk + validEvs.def + validEvs.spa + validEvs.spd + validEvs.spe);
   });
 
   it('should convert to object correctly', () => {

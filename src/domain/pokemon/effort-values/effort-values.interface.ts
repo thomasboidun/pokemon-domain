@@ -1,4 +1,4 @@
-import { EffortValueValue } from "./effort-values.type";
+import { EffortValueValue } from './effort-values.type';
 
 /**
  * Interface displaying Effort Values (EV) for each Pokémon stat.

@@ -1,6 +1,6 @@
-import { ValueObject } from "../../../core/value-object";
-import { EFFORT_VALUES } from "../../../domain/pokemon/effort-values/effort-values.data";
-import { EffortValueValue } from "../../../domain/pokemon/effort-values/effort-values.type";
+import { ValueObject } from '../../../core/value-object';
+import { EFFORT_VALUES } from '../../../domain/pokemon/effort-values/effort-values.data';
+import { EffortValueValue } from '../../../domain/pokemon/effort-values/effort-values.type';
 
 /**
  * Properties for EffortValue value object

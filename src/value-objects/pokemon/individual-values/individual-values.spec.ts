@@ -34,9 +34,7 @@ describe('IndividualValues', () => {
         ...validIVs,
         atk: 40 as any, // invalid (>31)
       };
-      expect(() => IndividualValues.create(invalidIVs)).toThrow(
-        'Individual value must be an integer number between 0 and 31.'
-      );
+      expect(() => IndividualValues.create(invalidIVs)).toThrow('Individual value must be an integer number between 0 and 31.');
     });
   });
 });

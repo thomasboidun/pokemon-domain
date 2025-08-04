@@ -1,6 +1,6 @@
-import { ValueObject } from "../../../core/value-object";
-import { INDIVIDUAL_VALUES } from "../../../domain/pokemon/individual-values/individual-values.data";
-import { IndividualValueValue } from "../../../domain/pokemon/individual-values/individual-values.type";
+import { ValueObject } from '../../../core/value-object';
+import { INDIVIDUAL_VALUES } from '../../../domain/pokemon/individual-values/individual-values.data';
+import { IndividualValueValue } from '../../../domain/pokemon/individual-values/individual-values.type';
 
 /**
  * Properties for IndividualValue value object

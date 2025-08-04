@@ -1,4 +1,4 @@
-import { IndividualValueValue } from "./individual-values.type";
+import { IndividualValueValue } from './individual-values.type';
 
 /**
  * Interface displaying Individual Values (IV) for each Pokémon stat.

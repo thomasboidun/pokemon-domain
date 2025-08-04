@@ -1,6 +1,6 @@
-import { ValueObject } from "../../../core/value-object";
-import { INatureMutipliers } from "../../../domain/pokemon/nature/nature.interface";
-import { NatureMultiplier } from "./nature-multiplier";
+import { ValueObject } from '../../../core/value-object';
+import { INatureMutipliers } from '../../../domain/pokemon/nature/nature.interface';
+import { NatureMultiplier } from './nature-multiplier';
 
 /**
  * Internal props for the NatureMultipliers value object.

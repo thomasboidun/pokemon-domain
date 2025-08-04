@@ -16,7 +16,7 @@ export interface NatureSummaryProps {
  * Each summary describes one increased stat and one decreased stat (e.g., "+Atk, -Def").
  */
 export class NatureSummary extends ValueObject<NatureSummaryProps> {
-  private static _all: NatureSummary[] = NATURE_SUMMARIES.map(value => new NatureSummary({ value }));
+  private static _all: NatureSummary[] = NATURE_SUMMARIES.map((value) => new NatureSummary({ value }));
 
   /** Retrieve all predefined NatureSummary instances */
   public static get all(): readonly NatureSummary[] {

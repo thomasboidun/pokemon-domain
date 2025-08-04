@@ -1,4 +1,4 @@
-import { NatureMultiplierValue, NatureNameValue, NatureSummaryValue } from "./nature.type";
+import { NatureMultiplierValue, NatureNameValue, NatureSummaryValue } from './nature.type';
 
 /**
  * Raw representation of nature multipliers for each stat.

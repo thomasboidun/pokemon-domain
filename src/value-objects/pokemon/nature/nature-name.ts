@@ -16,7 +16,7 @@ export interface NatureNameProps {
  * Validates that the name is among the official nature names.
  */
 export class NatureName extends ValueObject<NatureNameProps> {
-  private static _all: NatureName[] = NATURE_NAMES.map(value => new NatureName({ value }));
+  private static _all: NatureName[] = NATURE_NAMES.map((value) => new NatureName({ value }));
 
   /** Retrieve all predefined NatureName instances */
   public static get all(): readonly NatureName[] {

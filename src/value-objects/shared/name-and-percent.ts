@@ -47,7 +47,7 @@ export class NameAndPercent extends ValueObject<NameAndPercentProps> {
   }
 
   /**
-   * Parses a string of format "Name 50%", "Name 50.1%", or "Name 50.123%" 
+   * Parses a string of format "Name 50%", "Name 50.1%", or "Name 50.123%"
    * into a NameAndPercent value object.
    * @param str Input string to parse (e.g. "Overgrow 12.345%").
    * @returns A NameAndPercent instance parsed from the string.

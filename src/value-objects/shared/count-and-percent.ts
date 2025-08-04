@@ -9,7 +9,7 @@ import { Percent } from './percent';
 export interface CountAndPercentProps {
   /** Count value object */
   count: Count;
-  
+
   /** Percent value object */
   percent: Percent;
 }

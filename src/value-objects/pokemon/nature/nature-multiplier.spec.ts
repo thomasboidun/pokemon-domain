@@ -1,5 +1,5 @@
-import { NATURE_MULTIPLIERS } from "../../../domain/pokemon/nature/nature.data";
-import { NatureMultiplier } from "./nature-multiplier";
+import { NATURE_MULTIPLIERS } from '../../../domain/pokemon/nature/nature.data';
+import { NatureMultiplier } from './nature-multiplier';
 
 describe('NatureMultiplier', () => {
   it('should create a valid NatureMultiplier', () => {

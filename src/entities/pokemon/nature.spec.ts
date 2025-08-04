@@ -1,5 +1,5 @@
-import { NATURE_NAMES, NATURE_SUMMARIES } from "../../domain/pokemon/nature/nature.data";
-import { Nature } from "./nature";
+import { NATURE_NAMES, NATURE_SUMMARIES } from '../../domain/pokemon/nature/nature.data';
+import { Nature } from './nature';
 
 describe('Nature', () => {
   it('should return all predefined Natures', () => {
