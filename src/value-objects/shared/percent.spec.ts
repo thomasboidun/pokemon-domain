@@ -2,9 +2,13 @@ import { Percent } from './percent';
 
 describe('Percent', () => {
   it('should create a valid Percent instance with correct value', () => {
-    const percent = Percent.create(42.12345);
-    expect(percent).toBeInstanceOf(Percent);
-    expect(percent.value).toBe(42.123); // rounded to 3 decimal places
+    const percent1 = Percent.create(42.12345, 3);
+    expect(percent1).toBeInstanceOf(Percent);
+    expect(percent1.value).toBe(42.123); // rounded to 3 decimal places
+
+    const percent2 = Percent.create(42.12345, 2);
+    expect(percent2).toBeInstanceOf(Percent);
+    expect(percent2.value).toBe(42.12); // rounded to 2 decimal places
   });
 
   it('should throw if value is negative', () => {
@@ -17,6 +21,14 @@ describe('Percent', () => {
 
   it('should throw if value is not a number', () => {
     expect(() => Percent.create(NaN)).toThrow('Percent must be a number between 0 and 100.');
+  });
+
+  it('should throw if decimals is lower than 0', () => {
+    expect(() => Percent.create(100, -1)).toThrow('The number of digits after the decimal point must be an integer greater than or equal to zero.');
+  });
+
+  it('should throw if decimals parameter is float', () => {
+    expect(() => Percent.create(100, 3.3)).toThrow('The number of digits after the decimal point must be an integer greater than or equal to zero.');
   });
 
   it('should consider two Percents with same value as equal', () => {
