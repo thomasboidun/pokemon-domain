@@ -1,5 +1,6 @@
 import { ValueObject } from '../../../core/value-object';
-import { EloRatingValue, ELO_RATINGS } from '../../../domain/smogon/elo-rating';
+import { ELO_RATINGS } from '../../../domain/smogon/elo-rating/elo-rating.data';
+import { EloRatingValue } from '../../../domain/smogon/elo-rating/elo-rating.type';
 
 export interface EloRatingProps {
   value: EloRatingValue;
