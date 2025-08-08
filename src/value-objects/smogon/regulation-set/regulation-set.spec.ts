@@ -9,9 +9,9 @@ describe('RegulationSet', () => {
   });
 
   it('should return correct instance for valid values', () => {
-    for (const shorthand of REGULATION_SETS) {
-      const instance = RegulationSet.getByValue(shorthand);
-      expect(instance.value).toBe(shorthand);
+    for (const reg of REGULATION_SETS) {
+      const instance = RegulationSet.getByValue(reg);
+      expect(instance.value).toBe(reg);
     }
   });
 
@@ -33,9 +33,9 @@ describe('RegulationSet', () => {
   });
 
   it('should return the string representation of the regulation set', () => {
-    for (const shorthand of REGULATION_SETS) {
-      const instance = RegulationSet.getByValue(shorthand);
-      expect(instance.toString()).toBe(shorthand);
+    for (const reg of REGULATION_SETS) {
+      const instance = RegulationSet.getByValue(reg);
+      expect(instance.toString()).toBe(reg);
     }
   });
 });

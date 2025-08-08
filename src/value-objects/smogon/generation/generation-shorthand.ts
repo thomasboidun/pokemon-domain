@@ -38,7 +38,7 @@ export class GenerationShorthand extends ValueObject<GenerationShorthandProps> {
    */
   public static getByValue(shorthand: GenerationShorthandValue): GenerationShorthand {
     if (!GENERATION_SHORTHANDS.includes(shorthand)) {
-      throw new Error(`Invalid generation name "${shorthand}". Must be one of ${GENERATION_SHORTHANDS.join(', ')}.`);
+      throw new Error(`Invalid generation shorthand "${shorthand}". Must be one of ${GENERATION_SHORTHANDS.join(', ')}.`);
     }
 
     const found = this.all.find((s) => s.value === shorthand);
