@@ -112,4 +112,9 @@ export class EffortValues extends ValueObject<EffortValuesProps> {
       spe: this.spe.value,
     };
   }
+
+  public toString(): string {
+    const { hp, atk, def, spa, spd, spe } = this.toObject();
+    return `${hp}/${atk}/${def}/${spa}/${spd}/${spe}`;
+  }
 }

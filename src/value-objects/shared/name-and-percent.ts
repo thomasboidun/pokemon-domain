@@ -72,4 +72,8 @@ export class NameAndPercent extends ValueObject<NameAndPercentProps> {
       percent: this.props.percent.value,
     };
   }
+
+  public toString(): string {
+    return `${this.name.value} ${this.percent.value}%`;
+  }
 }

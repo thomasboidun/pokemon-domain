@@ -37,4 +37,8 @@ export class Name extends ValueObject<NameProps> {
       throw new TypeError('Name must be a string longer than 0.');
     }
   }
+
+  public toString(): string {
+    return this.value;
+  }
 }
