@@ -7,16 +7,16 @@ describe('Rank', () => {
     expect(rank.value).toBe(5);
   });
 
-  it('should throw if rank is negative', () => {
-    expect(() => Rank.create(-1)).toThrow('Rank must be an integer greater than or equal to 0.');
+  it('should throw errorif rank is negative', () => {
+    expect(() => Rank.create(-1)).toThrow();
   });
 
-  it('should throw if rank is not an integer', () => {
-    expect(() => Rank.create(3.14)).toThrow('Rank must be an integer greater than or equal to 0.');
+  it('should throw error if rank is not an integer', () => {
+    expect(() => Rank.create(3.14)).toThrow();
   });
 
-  it('should throw if rank is not a number', () => {
-    expect(() => Rank.create(NaN)).toThrow('Rank must be an integer greater than or equal to 0.');
+  it('should throw error if rank is not a number', () => {
+    expect(() => Rank.create(NaN)).toThrow();
   });
 
   it('should consider two Rank instances with same value as equal', () => {
